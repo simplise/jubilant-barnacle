@@ -6,15 +6,24 @@ export default defineNuxtConfig({
   css: [
     "./assets/scss/custom.scss"
   ],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `
-           @import "@/assets/scss/_variables.scss";
-           `,
+  usebootstrap: {
+    static: true,
+    scss: undefined,
+    icon: undefined,
+    image: undefined,
+    fonts: undefined,
+    sitemap: undefined,
+    robots: undefined,
+    shiki: undefined,
+    vueuse: undefined,
+    integration: {
+      protocol: {
+        'reqres': {
+          type: 'fetch',
+          prefix: 'https://reqres.in/api/',
         },
       },
-    }}
+    },
   }
+}
 )
