@@ -3,9 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: "2024-07-03",
   modules: ["usebootstrap"],
-  css: [
-    "./assets/scss/custom.scss"
-  ],
   usebootstrap: {
     static: true,
     scss: undefined,
